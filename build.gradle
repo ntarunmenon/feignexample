@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'org.arunm'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'io.github.openfeign:feign-core:10.11';
+    implementation 'io.github.openfeign:feign-gson:10.11';
+    testImplementation 'org.apache.commons:commons-exec:1.3';
+}
